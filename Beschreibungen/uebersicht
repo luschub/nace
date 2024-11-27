@@ -1,1 +1,15 @@
-uebersicht
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Datei-Links</title>
+</head>
+<body>
+  <h1>Meine Dateien</h1>
+  <ul>
+    <li><a href="01.1_2024-11-26.txt">01.1_2024-11-26.txt</a></li>
+    <li><a href="01.2_2024-11-26.txt">01.2_2024-11-26.txt</a></li>
+    <li><a href="01.3_2024-11-26.txt">01.3_2024-11-26.txt</a></li>
+    <!-- Fügen Sie weitere Listenpunkte für die anderen Dateien hinzu -->
+  </ul>
+</body>
+</html>
