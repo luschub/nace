@@ -1,1 +1,71 @@
-test
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meine Website</h1>
+    </header>
+
+    <nav>
+        <a href="#blog">Blog</a>
+        <a href="#ueber">Über</a>
+        <a href="#struktur">Struktur</a>
+    </nav>
+
+    <main>
+        <h2>Hauptinhalt</h2>
+        <p>
+            Hier finden Sie weitere Informationen. Klicken Sie für Details auf 
+            <a href="Beschreibungen/details.txt">Weitere Beschreibungen</a>.
+        </p>
+    </main>
+
+    <footer>
+        <a href="impressum.html">Impressum</a> | 
+        <a href="datenschutz.html">Datenschutz</a> | 
+        <a href="kontakt.html">Kontakt</a>
+    </footer>
+</body>
+</html>
