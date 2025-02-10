@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            color: white;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        footer {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landingpage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Meine Website</h1>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Willkommen auf unserer Landingpage</h1>
+      <p>Entdecken Sie unsere Dienstleistungen und Produkte.</p>
+      <a href="#services" class="btn">Mehr erfahren</a>
+    </div>
+  </header>
 
-    <nav>
-        <a href="#blog">Blog</a>
-        <a href="#ueber">Über</a>
-        <a href="#struktur">Struktur</a>
-    </nav>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#services">Dienstleistungen</a></li>
+        <li><a href="#shiny-app">Shiny App</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-        <h2>Hauptinhalt</h2>
-        <p>
-            Hier finden Sie weitere Informationen. Klicken Sie für Details auf 
-            <a href="Beschreibungen/details.txt">Weitere Beschreibungen</a>.
-        </p>
-    </main>
+  <section id="services">
+    <div class="container">
+      <h2>Unsere Dienstleistungen</h2>
+      <div class="service">
+        <h3>Service 1</h3>
+        <p>Beschreibung von Service 1.</p>
+      </div>
+      <div class="service">
+        <h3>Service 2</h3>
+        <p>Beschreibung von Service 2.</p>
+      </div>
+      <div class="service">
+        <h3>Service 3</h3>
+        <p>Beschreibung von Service 3.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <a href="impressum.html">Impressum</a> | 
-        <a href="datenschutz.html">Datenschutz</a> | 
-        <a href="kontakt.html">Kontakt</a>
-    </footer>
+  <section id="shiny-app">
+    <div class="container">
+      <h2>Unsere Shiny App</h2>
+      <iframe src="https://0ufdhr-lutz-schubbert.shinyapps.io/600_nace/" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p>Haben Sie Fragen? Kontaktieren Sie uns!</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Absenden</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ihr Unternehmen. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
 </body>
 </html>
